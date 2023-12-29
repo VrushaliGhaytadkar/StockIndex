@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
+    <title>Stock Index</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Stock Index</h2>
+        <label for="Years">Insert Records</label>
+        <input type="text" id="Years" name="Years" type="number">
+        <button id="submit-button" onclick="populate()"> Insert</button>
+        <br>
+        <label for="Years">Delete Record</label>
+        <input type="text" id="deleteRecord" name="Delete Record" type="number">
+        <button id="submit-button" onclick="deleteRecord()">Delete</button>
+        <br>
+        <br>
+        <table id="tblReturns">
+            <!--table head-->
+            <thead>
+                <!--table row-->
+                <tr>
+                    <!--table header columns-->
+                    <th>Year</th>
+                    <th>S&P</th>
+                    <th>DOW</th>
+                    <th>Nasdac</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>2023</td>
+                    <td>80,000</td>
+                    <td>77,000</td>
+                    <td>95,000</td>
+                </tr> -->
+                <!--populate through javascript-->
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
